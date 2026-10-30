@@ -1,0 +1,17 @@
+{
+  "name": "nocturne",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "backend:dev": "pnpm --filter @nocturne/backend dev",
+    "mobile:dev": "pnpm --filter @nocturne/mobile start",
+    "backend:build": "pnpm --filter @nocturne/backend build",
+    "backend:test": "pnpm --filter @nocturne/backend test",
+    "typecheck": "pnpm --filter @nocturne/backend typecheck && pnpm --filter @nocturne/mobile typecheck"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client"
+    ]
+  }
+}

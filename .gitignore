@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Critical: burner wallet (encrypted private key)
+burner-wallet.enc
+
+# Expo / React Native
+.expo/
+.expo-shared/
+ios/Pods/
+ios/build/
+android/build/
+android/.gradle/
+android/app/build/
+android/app/release/
+
+# Logs & OS
+*.log
+npm-debug.*
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
